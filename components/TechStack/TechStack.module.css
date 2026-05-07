@@ -1,0 +1,84 @@
+.stackFilter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.filterBtn {
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--text2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+}
+.filterBtn:hover { border-color: var(--accent-dim); color: var(--text); }
+.filterBtnActive { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.stackCategories { display: flex; flex-direction: column; gap: 28px; }
+
+.stackCatLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stackCatLabel::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.stackItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stackItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text2);
+  transition: border-color 0.2s, color 0.2s;
+}
+.stackItem:hover { border-color: var(--border2); color: var(--text); }
+
+.stackDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stackIcon {
+  width: auto;
+  height: 16px;
+  max-width: 32px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.dotGreen  { background: #22d3a5; }
+.dotYellow { background: #f59e0b; }
+.dotBlue   { background: #60a5fa; }
+.dotRed    { background: #f87171; }
+.dotPurple { background: #c084fc; }
