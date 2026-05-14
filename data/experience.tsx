@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
         Led frontend development of the <H>Supermarket Store Selector</H> —
         drove{" "}
         <H>
-          +6.5% GMV (Gross Merchandise Value) / +1.2% new buyers in Brazil
+          +6.5% Gross Merchandise Value (GMV) / +1.2% new buyers in Brazil
         </H>{" "}
         and <H>+12.3% GMV / +14.3% new buyers in Mexico</H> in Mercado Libre
         {"'"}s supermarket vertical, one of LATAM{"'"}s highest-traffic
@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
       <>
         Built the Cart Awareness feature contributing to{" "}
         <H>
-          +0.94% NMV (Net Merchandise Value) / +2.03% new buyers in Chile
+          +0.94% Net Merchandise Value (NMV) / +2.03% new buyers in Chile
         </H>{" "}
         and <H>+0.93% NMV / +0.73% new buyers in Mexico</H>.
       </>,
