@@ -37,15 +37,11 @@ export const projects: Project[] = [
     screenshot: "/projects/portfolio.png",
     description:
       "Personal portfolio built from scratch with Next.js and TypeScript — no UI libraries, no templates. Custom components, responsive layout, and smooth animations.",
-    tags: [
-      { label: "Next.js" },
-      { label: "TypeScript" },
-      { label: "Vercel" },
-    ],
+    tags: [{ label: "Next.js" }, { label: "TypeScript" }, { label: "Vercel" }],
     links: [
       {
         label: "GitHub",
-        href: "https://github.com/ramonseugling/my-portfolio",
+        href: "https://github.com/ramonseugling/ramonseugling.dev",
         icon: "github",
         ghost: true,
       },
