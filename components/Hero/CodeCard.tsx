@@ -53,11 +53,11 @@ export default function CodeCard() {
           {"    "}
           <span className={styles.fn}>stack</span>
           <span className={styles.pn}>={"{["}</span>
+          <span className={styles.str}>{'"TypeScript"'}</span>
+          <span className={styles.pn}>, </span>
           <span className={styles.str}>{'"React"'}</span>
           <span className={styles.pn}>, </span>
-          <span className={styles.str}>{'"TS"'}</span>
-          <span className={styles.pn}>, </span>
-          <span className={styles.str}>{'"Next"'}</span>
+          <span className={styles.str}>{'"Node"'}</span>
           <span className={styles.pn}>{"]}"}</span>
         </Line>
         <Line n={9}>

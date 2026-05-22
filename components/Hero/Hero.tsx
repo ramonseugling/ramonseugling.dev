@@ -21,9 +21,9 @@ export default function Hero() {
         <p className={styles.heroDesc}>
           Software Engineer shipping high-traffic features at Mercado Libre —
           Latin America&apos;s largest e-commerce platform (400M+ monthly
-          users). Specialized in React, TypeScript, and micro-frontend
-          architectures. Focused on code quality, user experience, and
-          measurable impact.
+          users). Full-stack JavaScript: React, TypeScript and micro-frontend
+          architectures on the client, Node.js and Express on the server.
+          Focused on code quality, user experience, and measurable impact.
         </p>
 
         <div className={styles.heroActions}>
