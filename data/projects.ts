@@ -25,7 +25,7 @@ export const projects: Project[] = [
         ghost: true,
       },
       {
-        label: "Live demo",
+        label: "Live",
         href: "https://www.rememberly.com.br",
         icon: "external",
       },

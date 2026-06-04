@@ -73,6 +73,7 @@ export const experiences: Experience[] = [
     role: "Software Engineer",
     company: "BRy Technology — Florianópolis, Brazil",
     period: "Sep 2020 – Sep 2024",
+    duration: "4 yrs",
     bullets: [
       <>
         <H>Easy Sign</H>: Frontend lead on a new electronic-signature REST API
@@ -122,6 +123,7 @@ export const experiences: Experience[] = [
     company:
       "FEESC — Santa Catarina State Telemedicine System, Florianópolis, Brazil",
     period: "Apr 2019 – May 2020",
+    duration: "1 yr 1 mo",
     bullets: [
       <>
         Contributed to one of{" "}

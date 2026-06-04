@@ -6,6 +6,7 @@ export interface Experience {
   role: string;
   company: string;
   period: string;
+  duration?: string;
   current?: boolean;
   bullets: ReactNode[];
   tags: { label: string; neutral?: boolean }[];
