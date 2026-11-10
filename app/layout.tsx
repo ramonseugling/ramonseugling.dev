@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import ClientShell from "@/components/ClientShell";
-import ScrollReveal from "@/components/ScrollReveal";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -19,16 +17,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ramon Seugling — Software Engineer",
   description:
-    "Software Engineer shipping high-traffic features at Mercado Libre (400M+ users). Specialized in React, TypeScript, and micro-frontend architectures.",
+    "Software engineer at Mercado Libre with a product mindset. From side projects to software used by millions, solving real problems.",
   openGraph: {
     title: "Ramon Seugling — Software Engineer",
     description:
-      "Shipping high-traffic features at Mercado Libre. React, TypeScript, micro-frontends. GMV +6.5% Brazil.",
+      "Software engineer at Mercado Libre with a product mindset. Currently building Rememberly.",
     type: "website",
     locale: "en_US",
   },
   robots: "index, follow",
 };
+
+// Sets the theme before first paint (saved choice, else system preference).
+const themeScript = `try{var t=localStorage.getItem("theme");if(!t){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.dataset.theme=t}catch(e){}`;
 
 export default function RootLayout({
   children,
@@ -36,12 +37,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>
-        <ClientShell />
-        <ScrollReveal />
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
